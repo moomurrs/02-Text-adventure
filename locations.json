@@ -10,7 +10,7 @@
         ]
     }, 
     "HALLWAY": {
-        "name": "HALLWAY",
+        "name": "***HALLWAY***",
         "desc": "You are in the hallway. It is cold and dark here.\nYou see door in front of you labeled LAB.",
         "exits": [
             {
@@ -26,7 +26,7 @@
         ]
     }, 
     "CHEM": {
-        "name": "CHEMICAL LAB",
+        "name": "***CHEMICAL LAB***",
         "desc": "You enter the Chemical Lab. Something has already destroyed all the beakers and solutions.\nYou struggle to make sense of what happened. There is a LAPTOP in the room.",
         "exits": [
             {
@@ -42,7 +42,7 @@
         ]
     },
     "LAPTOP": {
-        "name": "Peter's Work Laptop",
+        "name": "***Peter's Work Laptop***",
         "desc": "Your co-worker's laptop has a camera feed of what happened 4 hours ago. You rewind the recording and catch a glimpse of the beast.\nIt looks like a man with decomposing red skin. It screams. Is this your former employee? \nYou spot a gun in the SECURITY room from another feed.",
         "exits": [
             {
@@ -59,8 +59,8 @@
 
     }, 
     "SECURITY": {
-        "name": "SECURITY Office",
-        "desc": "You managed to limp to the Security Office but it's locked. You freeze in terror as you hear the sound of flesh being eaten. \nYou spot an ELEVATOR to go up to the roof. You turn around to see small garbage disposal CHUTE. \nYou can either choose ELEVATOR or CHUTE.",
+        "name": "***SECURITY Office***",
+        "desc": "You managed to limp to the Security Office but it's locked. You freeze in terror as you hear the sound of flesh being eaten. \nYou spot an ELEVATOR to go up to the roof. You turn around to see a small garbage disposal CHUTE. \nYou can either choose ELEVATOR or CHUTE.",
         "exits": [
             {
                 "exit": "BACK",
@@ -80,7 +80,7 @@
         ]
     }, 
     "ELEVATOR": {
-        "name": "MAIN FLOOR ELEVATOR",
+        "name": "***MAIN FLOOR ELEVATOR***",
         "desc": "",
         "exits": [
             {
@@ -91,8 +91,8 @@
         ]
     }, 
     "CHUTE": {
-        "name": "LOWER LEVEL ",
-        "desc": "The necro hears your footsteps and chases after you. You squeeze through the chute down but the monster couldn't fit through the small chute. \nAfter the bumpy fall down, you end up in the lower levels of the garage. You see your CAR not too far.",
+        "name": "***LOWER LEVEL***",
+        "desc": "The necro hears your footsteps and chases after you. You squeeze through the chute but the monster couldn't fit through. \nYou hear its scream of frustration fade as you slide down. \nAfter the bumpy fall down, you end up in the lower levels of the garage. You see your CAR not too far.",
         "exits": [
             {
                 "exit": "CAR",

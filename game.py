@@ -6,7 +6,7 @@ assert sys.version_info >= (3,7), "This script requires at least Python 3.7"
 # load the location JSON file
 game_file = 'locations.json'
 
-# fancy function to clear the terminal for a new game
+# fancy function to clear the terminal 
 def clear(): 
   
     # clear terminal for windows 
@@ -23,7 +23,7 @@ def load_files():
         with open(os.path.join(__location__, game_file)) as json_file: game = json.load(json_file)
         return game
     except:
-        print("There was a problem reading either the game or item file.")
+        print("Error loading file")
         os._exit(1)
 
 # function shows the current world,
@@ -46,8 +46,6 @@ def get_input():
 
 def update_room(game, current_location, response):
     location_properties = game[current_location]
-
-    #reduce(lambda a,b: a['target'] if (a['target'] == response) else b['target'], location_properties['exits'])
 
     for exits_in_current_room in location_properties['exits']:
         if response == exits_in_current_room['exit']:
@@ -77,25 +75,25 @@ def main():
         if(game[current_location]['name'] == 'this is the end'):
             clear()
             print("You escaped the monster!")
-            response = input("Play again? Y/N").lower().strip()
+            response = input("Play again? Y/N ").lower().strip()
             if response == "no" or response == "n":
                 break
             # if the users want to play again, reset the current room to START
             current_location = 'START'
         
         # if the current is the death room, kill the player and ask to restart the game
-        if game[current_location]['name'] == 'MAIN FLOOR ELEVATOR':
+        if game[current_location]['name'] == '***MAIN FLOOR ELEVATOR***':
             clear()
-            print("You sprint for the elevator and press the door close. The necrotizing monster hears the elevator bell ring and leaps towards the elevator. Its right arm squeezes through the elevator door but the doors snap it off.")
-            print("You hear thuds and movements around the elevator...")
-            print("Liquid drips on your neck as you look up to see the hidious monster.")
+            print("You sprint for the elevator and press the door close. The necrotizing monster hears the elevator bell ring and leaps toward the elevator. Its right arm squeezes through the elevator door but the doors snap it off.")
+            print("You hear thuds and movements around the elevator.")
+            print("Liquid drips on your neck as you look up to see the hidious monster drooling on you.")
             print("-----GAME OVER-----")
-            response = input("Try again? Y/N").lower().strip()
+            response = input("Try again? Y/N ").lower().strip()
             if response == "no" or response == "n":
                 break
             # if the users want to play again, reset the current room to START
             current_location = 'START'
-print("->HOW TO PLAY: each room has 2 exits. To go back, type BACK. To go forward into another room, type its name (indicated by capital letters).\n\n")
-input("Understood?")
+print("->HOW TO PLAY: each room has 2 exits. To go back, type BACK. To go forward into another room, type its name (indicated by capital letters).\n")
+input("Press Enter to continue ")
 main()
 print("Thanks for playing")
