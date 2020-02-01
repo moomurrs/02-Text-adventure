@@ -1,0 +1,114 @@
+{
+    "START": {
+        "name": "???Location unknown???",
+        "desc": "You wake up with a strong headache. Your body aches and the room is a mess.\nYou hear growling in the distance. Something is loose. There is an EXIT in the room.",
+        "exits": [
+            {
+                "exit": "EXIT",
+                "target": "HALLWAY"
+            }
+        ]
+    }, 
+    "HALLWAY": {
+        "name": "HALLWAY",
+        "desc": "You are in the hallway. It is cold and dark here.\nYou see door in front of you labeled LAB.",
+        "exits": [
+            {
+                "exit": "BACK",
+                "target": "START"
+                
+            },
+            {
+                "exit": "LAB",
+                "target": "CHEM"
+                
+            }
+        ]
+    }, 
+    "CHEM": {
+        "name": "CHEMICAL LAB",
+        "desc": "You enter the Chemical Lab. Something has already destroyed all the beakers and solutions.\nYou struggle to make sense of what happened. There is a LAPTOP in the room.",
+        "exits": [
+            {
+                "exit": "BACK",
+                "target": "HALLWAY"
+                
+            },
+            {
+                "exit": "LAPTOP",
+                "target": "LAPTOP"
+                
+            }
+        ]
+    },
+    "LAPTOP": {
+        "name": "Peter's Work Laptop",
+        "desc": "Your co-worker's laptop has a camera feed of what happened 4 hours ago. You rewind the recording and catch a glimpse of the beast.\nIt looks like a man with decomposing red skin. It screams. Is this your former employee? \nYou spot a gun in the SECURITY room from another feed.",
+        "exits": [
+            {
+                "exit": "BACK",
+                "target": "CHEM"
+                
+            },
+            {
+                "exit": "SECURITY",
+                "target": "SECURITY"
+                
+            }
+        ]
+
+    }, 
+    "SECURITY": {
+        "name": "SECURITY Office",
+        "desc": "You managed to limp to the Security Office but it's locked. You freeze in terror as you hear the sound of flesh being eaten. \nYou spot an ELEVATOR to go up to the roof. You turn around to see small garbage disposal CHUTE. \nYou can either choose ELEVATOR or CHUTE.",
+        "exits": [
+            {
+                "exit": "BACK",
+                "target": "CHEM"
+                
+            },
+            {
+                "exit": "ELEVATOR",
+                "target": "ELEVATOR"
+                
+            },
+            {
+                "exit": "CHUTE",
+                "target": "CHUTE"
+                
+            }
+        ]
+    }, 
+    "ELEVATOR": {
+        "name": "MAIN FLOOR ELEVATOR",
+        "desc": "",
+        "exits": [
+            {
+                "exit": "",
+                "target": ""
+                
+            }
+        ]
+    }, 
+    "CHUTE": {
+        "name": "LOWER LEVEL ",
+        "desc": "The necro hears your footsteps and chases after you. You squeeze through the chute down but the monster couldn't fit through the small chute. \nAfter the bumpy fall down, you end up in the lower levels of the garage. You see your CAR not too far.",
+        "exits": [
+            {
+                "exit": "CAR",
+                "target": "CAR"
+                
+            }
+        ]
+    },
+    "CAR": {
+        "name": "this is the end",
+        "desc": "end of game",
+        "exits": [
+            {
+                "exit": "",
+                "target": ""
+            }
+        ]
+    }
+}
